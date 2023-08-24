@@ -1,14 +1,29 @@
-.logo{
-    font-size: 30px;
+.nav{
+    background-color: #FFE2EC;
 }
-.Title{
-    background-color: #f9d6d5;
+.logoSerena{
+    height: 80px;
+    width: 160px;
+}
+
+.botonMenu{
+font-size: 20px;
+font-family: 'Bricolage Grotesque', sans-serif;
+}
+.items{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.title{
+    background-color: #EDCDBB;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(255, 255, 255);
+    font-family: 'Bricolage Grotesque', sans-serif;
 }
 .carrito{
-    width: 80px;
-    height: 40px;
-    object-fit: cover;
+    width: 60px;
+    height: 30px;
+}
+.cartNumber{
+    font-family:'Bricolage Grotesque', sans-serif;
 }
