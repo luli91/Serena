@@ -1,0 +1,14 @@
+.logo{
+    font-size: 30px;
+}
+.Title{
+    background-color: #f9d6d5;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.carrito{
+    width: 80px;
+    height: 40px;
+    object-fit: cover;
+}
