@@ -4,7 +4,9 @@
 // import ItemCount from './ItemCount'
 import ItemList from './ItemList'
 import { useParams } from 'react-router-dom'
-
+import img1 from '../assets/img/becca-shoes.webp'
+import img2 from '../assets/img/katekub.webp'
+import img3 from '../assets/img/miss-rock-1.webp'
 
 
 const ItemListContainer = () => {
@@ -12,9 +14,9 @@ const ItemListContainer = () => {
     console.log(categoria)
 
     const productos =[
-        {id: 1, nombre: "Miss-rock-1", descripcion: "Sandalias con taco chino rosa-doradas", stock: 5, categoria: "verano"},
-        {id: 2, nombre: "Becca-shoes", descripcion: "Botineta con taco alto", stock: 5, categoria: "primavera"},
-        {id: 3, nombre: "katekub", descripcion: "Borcego caña media", stock: 5, categoria: "invierno"},
+        {id: 1, nombre: "Miss-rock-1", descripcion: "Sandalias con taco chino rosa-doradas", stock: 5, categoria: "verano", img: img1},
+        {id: 2, nombre: "Becca-shoes", descripcion: "Botineta con taco alto", stock: 5, categoria: "primavera", img: img2},
+        {id: 3, nombre: "katekub", descripcion: "Borcego caña media", stock: 5, categoria: "invierno", img: img3},
     ]
 
     const getProductos =  new Promise((resolve,reject)=>{

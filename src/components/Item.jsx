@@ -1,15 +1,21 @@
 import React from 'react'
-import { Card, Image, Stack, Text, CardBody, Divider, Button, ButtonGroup, CardFooter, Heading } from "@chakra-ui/react"
+import { Card, Image, Stack, Text, CardBody, Divider, Button, ButtonGroup, CardFooter, Heading, Box } from "@chakra-ui/react"
 import { Link } from 'react-router-dom'
 
 const Item = ({producto}) => {
     console.log(producto)
     return (
-    <div>
+        <Box 
+        _hover={{ 
+            transform: "scale(1.05)", 
+            transition: "all 0.2s ease-in-out" 
+        }}
+        margin="24px"
+    >
         <Card maxW='sm'>
             <CardBody>
                 <Image
-                    src={producto.image}
+                    src={producto.img}
                     borderRadius='lg'
                 />
                 <Stack mt='6' spacing='3'>
@@ -29,7 +35,7 @@ const Item = ({producto}) => {
                 </ButtonGroup>
             </CardFooter>
         </Card>
-    </div>
+    </Box>
     )
 }
 
