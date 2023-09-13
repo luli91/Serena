@@ -24,3 +24,14 @@ font-family: 'Bricolage Grotesque', sans-serif;
 .cartNumber{
     font-family:'Bricolage Grotesque', sans-serif;
 }
+.botonMas {
+    border: solid 1px black;
+    width: 30px;
+    height: 30px;
+}
+.botonMenos {
+    border: solid 1px black;
+    width: 30px;
+    height: 30px;
+    margin:10px;
+}

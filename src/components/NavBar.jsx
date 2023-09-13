@@ -10,6 +10,7 @@ import {
 import CartWidget from './CartWidget'
 import { Image } from '@chakra-ui/react'
 import myImage from '../assets/img/logoSerena.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -19,9 +20,11 @@ const NavBar = () => {
         <div className="nav">
             <Flex>
                 <Box p='4'>
+                    <Link to={"/"}>
                     <div>
                     <Image className="logoSerena" src={myImage} alt='logo serena' />
                     </div>
+                    </Link>
                 </Box>
                 <Spacer />
                 <Box p='8'>
@@ -30,19 +33,29 @@ const NavBar = () => {
                             Categorias
                         </MenuButton>
                         <MenuList>
-                            <MenuItem className ="items">Jeans</MenuItem>
-                            <MenuItem className ="items">Remeras, camisas y tops</MenuItem>
-                            <MenuItem className ="items">Vestidos</MenuItem>
-                            <MenuItem className ="items">Faldas y shorts</MenuItem>
-                            <MenuItem className ="items">Sueters y Buzos</MenuItem>
-                            <MenuItem className ="items">Camperas</MenuItem>
-                            <MenuItem className ="items">Pantalones</MenuItem>
+                            <MenuItem className ="items">
+                                <Link to={`/categoria/${"verano"}`}>
+                                    categoria verano
+                                </Link>
+                            </MenuItem>
+                            <MenuItem className ="items">
+                                <Link to={`/categoria/${"invierno"}`}>
+                                    categoria invierno
+                                </Link>
+                            </MenuItem>
+                            <MenuItem className ="items">
+                                <Link to={`/categoria/${"primavera"}`}>
+                                    categoria primavera
+                                </Link>
+                            </MenuItem>
                         </MenuList>
                     </Menu>
                 </Box>
                 <Spacer />
                 <Box className="cartNumber" p='8'>
-                    <CartWidget />
+                    <Link to={"/cart"}>
+                        <CartWidget />
+                    </Link>
                 </Box>
             </Flex>
         </div>
