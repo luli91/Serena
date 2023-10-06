@@ -10,7 +10,7 @@ import {
 import CartWidget from './CartWidget'
 import { Image } from '@chakra-ui/react'
 import myImage from '../assets/img/logoSerena.png'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 
@@ -20,11 +20,11 @@ const NavBar = () => {
         <div className="nav">
             <Flex>
                 <Box p='4'>
-                    <Link to={"/"}>
+                    <NavLink to={"/"}>
                     <div>
                     <Image className="logoSerena" src={myImage} alt='logo serena' />
                     </div>
-                    </Link>
+                    </NavLink>
                 </Box>
                 <Spacer />
                 <Box p='8'>
@@ -34,19 +34,19 @@ const NavBar = () => {
                         </MenuButton>
                         <MenuList>
                             <MenuItem className ="items">
-                                <Link to={`/categoria/${"verano"}`}>
+                                <NavLink to={`/category/verano`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>
                                     categoria verano
-                                </Link>
+                                </NavLink>
                             </MenuItem>
                             <MenuItem className ="items">
-                                <Link to={`/categoria/${"invierno"}`}>
+                                <NavLink to={`/category/invierno`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>
                                     categoria invierno
-                                </Link>
+                                </NavLink>
                             </MenuItem>
                             <MenuItem className ="items">
-                                <Link to={`/categoria/${"primavera"}`}>
+                                <NavLink to={`/category/primavera`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>
                                     categoria primavera
-                                </Link>
+                                </NavLink>
                             </MenuItem>
                         </MenuList>
                     </Menu>

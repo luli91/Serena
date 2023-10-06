@@ -7,22 +7,33 @@ import ItemDetailContainer from "./components/ItemDetailContainer"
 import ItemListContainer from "./components/ItemListContainer"
 import NavBar from "./components/NavBar"
 import Cart from "./components/Cart" 
+import CartProvider from "./context/CartContext"
+
+
+
 
 const App = () => {
 
+  
   return (
-    <BrowserRouter>
+    <div>
 
-      <NavBar/>
-
-      <Routes>
-        <Route exact path='/cart' element={<Cart />}/>
-        <Route exact path='/' element={<ItemListContainer />}/>
-        <Route path="/categoria/:categoria" element={<ItemListContainer />}/>
-        <Route exact path="/item/:d" element={<ItemDetailContainer />}/>
-      </Routes>
-    
-    </BrowserRouter>
+    {/* <ShoppingCartContext>
+      <Cart/>
+    </ShoppingCartContext> */}
+        <BrowserRouter>
+          <CartProvider>
+            <NavBar/>
+            <Routes>
+              <Route path='/' element={<ItemListContainer greeting="New season is coming"/>}/>
+              <Route path="/category/:categoryId" element={<ItemListContainer greeting="New season is coming" />}/>
+              <Route path="/item/:itemId" element={<ItemDetailContainer />}/>
+              <Route path='/cart' element={<Cart />}/>
+            </Routes>
+          </CartProvider>
+        </BrowserRouter>
+        
+    </div>
   )
 }
 

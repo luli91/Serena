@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10;48&display=swap');
+
+
 .nav{
     background-color: #FFE2EC;
 }
@@ -34,4 +37,13 @@ font-family: 'Bricolage Grotesque', sans-serif;
     width: 30px;
     height: 30px;
     margin:10px;
+}
+.DescriptionProd {
+    font-size:17px;
+    font-weight: 600;
+}
+
+.PriceProd{
+    font-size:20px;
+    font-weight: 600;
 }

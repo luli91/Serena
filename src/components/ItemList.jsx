@@ -1,3 +1,5 @@
+//Este componente se encarga de listar los productos
+
 import React from 'react'
 import Item from './Item'
 import { Flex } from "@chakra-ui/react";
@@ -20,13 +22,21 @@ import { Flex } from "@chakra-ui/react";
 //     </div>
 //     )
 // }
-const ItemList = ({ productos }) => {
+const ItemList = ({ products }) => {
     return (
-        <Flex wrap="wrap" justify="center" >
-            {productos.map((producto) => (
-                <Item key={producto.id} producto={producto} />
-            ))}
-        </Flex>
+        <>
+            <Flex wrap="wrap" justify="center" >
+        {products.map(prod => <Item   key={prod.id} 
+                    id={prod.id} 
+                    name={prod.name} 
+                    img={prod.img} 
+                    description={prod.description} // Pasando 'description' como prop
+                    price={prod.price} // Pasando 'price' como prop
+                />
+            )} 
+        
+    </Flex>
+        </>
     );
 };
 export default ItemList
