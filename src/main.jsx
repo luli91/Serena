@@ -20,13 +20,14 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
 
-// Initialize Firestore
-const db = getFirestore(app);
+// // Initialize Firestore
+// const db = getFirestore(app);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   //toda mi aplicacion esta provista por Chakra ui
-  <ChakraProvider>
-    <App />
-  </ChakraProvider>
+    <ChakraProvider>
+        <App />
+    </ChakraProvider>
 );

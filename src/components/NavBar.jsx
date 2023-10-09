@@ -34,17 +34,17 @@ const NavBar = () => {
                         </MenuButton>
                         <MenuList>
                             <MenuItem className ="items">
-                                <NavLink to={`/category/verano`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>
+                                <NavLink to={`/categoria/verano`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>
                                     categoria verano
                                 </NavLink>
                             </MenuItem>
                             <MenuItem className ="items">
-                                <NavLink to={`/category/invierno`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>
+                                <NavLink to={`/categoria/invierno`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>
                                     categoria invierno
                                 </NavLink>
                             </MenuItem>
                             <MenuItem className ="items">
-                                <NavLink to={`/category/primavera`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>
+                                <NavLink to={`/categoria/primavera`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>
                                     categoria primavera
                                 </NavLink>
                             </MenuItem>

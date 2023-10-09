@@ -32,7 +32,8 @@ const decrementar = () => {
                     <Button size='xs' onClick={incrementar}>+</Button>
                 </Box>
                 <Box>
-                    <Button bg="#B76E79" color="white" onClick={() => onAdd(quantity)} disabled={!stock}>Agregar al carrito</Button>  {/*disabled es para que no se pase del stock que tengo*/}
+                <Button bg="#B76E79" color="white" onClick={() => onAdd(quantity)} disabled={!stock}>Agregar al carrito</Button>
+    {/*disabled es para que no se pase del stock que tengo*/}
                 </Box>
             </Stack>
         </>

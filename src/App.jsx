@@ -14,27 +14,22 @@ import CartProvider from "./context/CartContext"
 
 const App = () => {
 
-  
-  return (
-    <div>
 
-    {/* <ShoppingCartContext>
-      <Cart/>
-    </ShoppingCartContext> */}
-        <BrowserRouter>
-          <CartProvider>
-            <NavBar/>
-            <Routes>
-              <Route path='/' element={<ItemListContainer greeting="New season is coming"/>}/>
-              <Route path="/category/:categoryId" element={<ItemListContainer greeting="New season is coming" />}/>
-              <Route path="/item/:itemId" element={<ItemDetailContainer />}/>
-              <Route path='/cart' element={<Cart />}/>
-            </Routes>
-          </CartProvider>
-        </BrowserRouter>
-        
-    </div>
-  )
+    return (
+        <div>
+            <BrowserRouter>
+                <CartProvider>
+                    <NavBar/>
+                    <Routes>
+                        <Route path='/' element={<ItemListContainer greeting="New season is coming"/>}/>
+                        <Route path="/categoria/:categoriaId" element={<ItemListContainer greeting="New season is coming" />}/>
+                        <Route path="/item/:itemId" element={<ItemDetailContainer />}/>
+                        <Route path='/cart' element={<Cart />}/>
+                    </Routes>
+                </CartProvider>
+            </BrowserRouter>
+        </div>
+    )
 }
 
 export default App
