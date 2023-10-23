@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react'
 import CartWidget from './CartWidget'
 import { Image } from '@chakra-ui/react'
-import myImage from '../assets/img/logoSerena.png'
+import myImage from '../assets/img/LogoSerenaShoes.png'
 import { Link, NavLink } from 'react-router-dom'
 
 

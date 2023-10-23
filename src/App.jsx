@@ -8,7 +8,7 @@ import ItemListContainer from "./components/ItemListContainer"
 import NavBar from "./components/NavBar"
 import Cart from "./components/Cart" 
 import CartProvider from "./context/CartContext"
-
+import Footer from "./components/footer"
 
 
 
@@ -26,6 +26,7 @@ const App = () => {
                         <Route path="/item/:itemId" element={<ItemDetailContainer />}/>
                         <Route path='/cart' element={<Cart />}/>
                     </Routes>
+                    <Footer/>
                 </CartProvider>
             </BrowserRouter>
         </div>

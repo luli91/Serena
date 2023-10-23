@@ -5,7 +5,7 @@ import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Center, Image, B
 import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 
-const ItemDetail = ({ id, nombre, detalle, img, categoria, precio, stock }) => {
+const ItemDetail = ({ id, nombre, detalle, imagen, categoria, precio, stock }) => {
     const [quantityAdded, setQuantityAdded] = useState(0);
     const {addItem} = useContext(CartContext);
 
@@ -37,7 +37,7 @@ const ItemDetail = ({ id, nombre, detalle, img, categoria, precio, stock }) => {
                     <Heading size='md' textAlign='center' fontFamily="'Bricolage Grotesque', sans-serif">{nombre}</Heading>
                 </CardHeader>
                 <CardBody>
-                    <Image src={img} borderRadius='lg'/>
+                    <Image src={imagen} borderRadius='lg'/>
                     <Text className="DescriptionProd" size='md' textAlign='center'>{detalle}</Text>
                     <Text>Categoria: {categoria}</Text>
                     <Text className="PriceProd" size='md' textAlign='center' fontFamily="'Bricolage Grotesque', sans-serif">${precio}</Text>
