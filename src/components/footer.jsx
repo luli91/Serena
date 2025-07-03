@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { Image } from '@chakra-ui/react'
-import myImage from '../assets/img/LogoSerenaShoes.png'
+import myImage from '../../public/LogoSerenaShoes.png'
 
 
 const Footer = () => {
@@ -11,9 +11,9 @@ const Footer = () => {
         <Image className="logoSerena" src={myImage} alt='logo serena' />
         </div>
         <div>
-            <p style={{ fontSize: 'medium', textAlign: 'center', fontFamily: "'Bricolage Grotesque', sans-serif" }}>Teléfono: +54 11 1234-5678</p>
-            <p style={{ fontSize: 'medium', textAlign: 'center', fontFamily: "'Bricolage Grotesque', sans-serif" }}>Email: ejemplo@dominio.com</p>
-            <p style={{ fontSize: 'medium', textAlign: 'center', fontFamily: "'Bricolage Grotesque', sans-serif" }}>Dirección: Calle Falsa 123, Buenos Aires, Argentina</p>
+            <p style={{ fontSize: 'medium', textAlign: 'center', fontFamily: "'Bricolage Grotesque', sans-serif", paddingRight: '20px' }}>Teléfono: +54 11 1234-5678</p>
+            <p style={{ fontSize: 'medium', textAlign: 'center', fontFamily: "'Bricolage Grotesque', sans-serif", paddingRight: '20px' }}>Email: ejemplo@dominio.com</p>
+            <p style={{ fontSize: 'medium', textAlign: 'center', fontFamily: "'Bricolage Grotesque', sans-serif", paddingRight: '20px' }}>Dirección: Calle Falsa 123, Buenos Aires, Argentina</p>
         </div>
         <div>
             <a href="https://www.facebook.com/tu-página"><FaFacebook /> Facebook</a>
